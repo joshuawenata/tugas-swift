@@ -14,6 +14,9 @@
 		A6C486982C61006A00D9C9E2 /* tugas_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486972C61006A00D9C9E2 /* tugas_swiftTests.swift */; };
 		A6C486A22C61006A00D9C9E2 /* tugas_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486A12C61006A00D9C9E2 /* tugas_swiftUITests.swift */; };
 		A6C486A42C61006A00D9C9E2 /* tugas_swiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486A32C61006A00D9C9E2 /* tugas_swiftUITestsLaunchTests.swift */; };
+		A6C486B52C61013C00D9C9E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B42C61013C00D9C9E2 /* HomeView.swift */; };
+		A6C486B72C61017C00D9C9E2 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B62C61017C00D9C9E2 /* ItemView.swift */; };
+		A6C486B92C61028B00D9C9E2 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B82C61028B00D9C9E2 /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		A6C4869D2C61006A00D9C9E2 /* tugas-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tugas-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C486A12C61006A00D9C9E2 /* tugas_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tugas_swiftUITests.swift; sourceTree = "<group>"; };
 		A6C486A32C61006A00D9C9E2 /* tugas_swiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tugas_swiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6C486B42C61013C00D9C9E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A6C486B62C61017C00D9C9E2 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		A6C486B82C61028B00D9C9E2 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		A6C486852C61006800D9C9E2 /* tugas-swift */ = {
 			isa = PBXGroup;
 			children = (
+				A6C486B32C61010100D9C9E2 /* ViewModel */,
+				A6C486B22C6100FB00D9C9E2 /* Model */,
+				A6C486B12C6100F300D9C9E2 /* View */,
 				A6C486862C61006800D9C9E2 /* tugas_swiftApp.swift */,
 				A6C486882C61006800D9C9E2 /* ContentView.swift */,
 				A6C4868A2C61006A00D9C9E2 /* Assets.xcassets */,
@@ -125,6 +134,30 @@
 				A6C486A32C61006A00D9C9E2 /* tugas_swiftUITestsLaunchTests.swift */,
 			);
 			path = "tugas-swiftUITests";
+			sourceTree = "<group>";
+		};
+		A6C486B12C6100F300D9C9E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6C486B42C61013C00D9C9E2 /* HomeView.swift */,
+				A6C486B62C61017C00D9C9E2 /* ItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C486B22C6100FB00D9C9E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6C486B82C61028B00D9C9E2 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6C486B32C61010100D9C9E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C486B52C61013C00D9C9E2 /* HomeView.swift in Sources */,
 				A6C486892C61006800D9C9E2 /* ContentView.swift in Sources */,
 				A6C486872C61006800D9C9E2 /* tugas_swiftApp.swift in Sources */,
+				A6C486B72C61017C00D9C9E2 /* ItemView.swift in Sources */,
+				A6C486B92C61028B00D9C9E2 /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +466,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
