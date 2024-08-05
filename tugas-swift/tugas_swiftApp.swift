@@ -12,6 +12,6 @@ struct tugas_swiftApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
+        }.modelContainer(for: CardModel.self)
     }
 }

@@ -1,21 +1,26 @@
-//
-//  ContentView.swift
-//  tugas-swift
-//
-//  Created by Joshua Wenata Sunarto on 05/08/24.
-//
-
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [CardModel]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "plus.app.fill")
+                    Text("Home")
+                }
+            
+            ItemView()
+                .tabItem {
+                    Image(systemName: "person.text.rectangle.fill")
+                    Text("Items")
+                }
         }
-        .padding()
     }
 }
 
