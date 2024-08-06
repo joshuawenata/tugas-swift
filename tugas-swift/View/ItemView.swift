@@ -9,7 +9,9 @@ import SwiftUI
 import SwiftData
 
 struct ItemView: View {
+    @Environment(\.modelContext) var context
     @Query(sort: \CardModel.name) private var cards: [CardModel]
+
     var body: some View {
         NavigationStack{
             if cards.isEmpty {
@@ -24,6 +26,13 @@ struct ItemView: View {
                             Text(card.name)
                                 .font(.title2)
                         }
+                        
+                    }
+                    .onDelete{ IndexSet in
+                        for index in IndexSet {
+                            context.delete(cards[index])
+                        }
+                        
                     }
                 }
                 .listStyle(.plain)
@@ -31,8 +40,8 @@ struct ItemView: View {
                 
             }
         }
-        
     }
+    
 }
 
 #Preview {
