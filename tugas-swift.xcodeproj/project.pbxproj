@@ -17,6 +17,7 @@
 		A6C486B52C61013C00D9C9E2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B42C61013C00D9C9E2 /* HomeView.swift */; };
 		A6C486B72C61017C00D9C9E2 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B62C61017C00D9C9E2 /* ItemView.swift */; };
 		A6C486B92C61028B00D9C9E2 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C486B82C61028B00D9C9E2 /* CardModel.swift */; };
+		FF44F77A2C6238D4009DE4A5 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF44F7792C6238D4009DE4A5 /* EditItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A6C486B42C61013C00D9C9E2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A6C486B62C61017C00D9C9E2 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		A6C486B82C61028B00D9C9E2 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		FF44F7792C6238D4009DE4A5 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			children = (
 				A6C486B42C61013C00D9C9E2 /* HomeView.swift */,
 				A6C486B62C61017C00D9C9E2 /* ItemView.swift */,
+				FF44F7792C6238D4009DE4A5 /* EditItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				A6C486872C61006800D9C9E2 /* tugas_swiftApp.swift in Sources */,
 				A6C486B72C61017C00D9C9E2 /* ItemView.swift in Sources */,
 				A6C486B92C61028B00D9C9E2 /* CardModel.swift in Sources */,
+				FF44F77A2C6238D4009DE4A5 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@ struct ItemView: View {
                 List{
                     ForEach(cards) { card in
                         NavigationLink{
-                            Text(card.name)
+                            EditItemView(card: card)
                         } label: {
                             Text(card.name)
                                 .font(.title2)
